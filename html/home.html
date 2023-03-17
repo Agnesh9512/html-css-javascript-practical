@@ -24,8 +24,8 @@
         <div class="container-fluid flex-wrap flex-nowrap">
           <div id="logo" class="nav-item">
             <div id="logoPart" class="nav-item">
-              <img src="/images/logo.png" id="logoImg" class="nav-item">
-              <span id="logoName" class="nav-item">whitepace</span>
+              <a href="#"><img src="/images/logo.png" id="logoImg" class="nav-item"></a>
+              <a href="/html/home.html"><span id="logoName" class="nav-item">whitepace</span></a>
             </div>  
           </div>
 
@@ -34,8 +34,8 @@
             <a href="#">Solutions <img src="/images/menu.png"></a>
             <a href="#">Resources <img src="/images/menu.png"></a>
             <a href="#">Pricing <img src="/images/menu.png"></a>
-            <a><button type="button" id="login">Login</button></a>
-            <a><button type="button" id="free">Try Whitespace free <img src="/images/next.png"></button></a>
+            <a href="#signin" id="sign_in" class="nav-item d-inline-flex px-3" data-target="#form1" data-toggle="modal">Login</a>
+            <a href="#">Try Whitespace free <img src="/images/next.png"></a>
 
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
@@ -44,6 +44,35 @@
         </div>
       </nav>
     </header>
+
+    <div class="container">
+      <form id="form1" class="needs-validation novalidate">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal">
+            <div class="modal-header text-center">
+              <h3 class="modal-title w-100">Login</h3>
+            </div>
+            <div class="md-form mb-4 mt-2">
+              <label class="form-label mt-2">User Name</label>
+              <input id="username" type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="md-form mb-4">
+              <label class="form-label">User Email ID</label>
+              <input id="email" type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="md-form mb-4">
+              <label class="form-label">Enter Password</label>
+              <input id="pass" type="password" class="form-control" placeholder="Password" required>
+            </div>
+            <a href="/html/home.html" class="already">Already signed in ? </a>
+            <div class="md-form pt-2 mb-4 text-xl-center">
+              <button id="submitin" type="submit" class="btn btn-primary form-control" onclick="store()">Submit</button>
+              <button id="cancle" class="close-modal btn btn-secondary btn-outline-light form-control" data-dismiss="modal">Cancle</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
 
     <section class="sec1"> 
       <!-- <img id="backgroundLine" src="/images/bacgroundlines.png"> -->
@@ -150,7 +179,7 @@
           </div>
         </div>
         <div id="row7" class="row">
-          <div id="page5C1" class="col-lg-3 col-md-12 col-sm-12">
+          <div id="page5C1" class="col-lg-4 col-md-8 col-sm-12">
             <div id="page5Tblock1">
               <div id="page5Tb2">
                 <p id="page5T3">Free</p>
@@ -168,7 +197,7 @@
               </div>
             </div>
           </div>
-          <div id="page5C2" class="col-lg-3 col-md-12 col-sm-12">
+          <div id="page5C2" class="col-lg-4 col-md-8 col-sm-12">
             <div id="page5Tblock2">
               <div id="page5Tb4">
                 <p id="page5T6">Personal</p>
@@ -186,7 +215,7 @@
               </div>
             </div>
           </div>
-          <div id="page5C3" class="col-lg-3 col-md-12 col-sm-12">
+          <div id="page5C3" class="col-lg-4 col-md-8 col-sm-12">
             <div id="page5Tblock3">
               <div id="page5Tb2">
                 <p id="page5T3">Organization</p>
@@ -396,7 +425,7 @@
                   <p id="page11T2">Get started for free.<br>Add your whole team as your needs grow.</p>
                 </div>
               </div>
-              <button id="page11Btn1" >Try Taskey free <img src="/images/next.png"></button>
+              <button id="page11Btn1">Try Taskey free <img src="/images/next.png"></button>
               <p id="page11T3">On a big team? Contact sales</p>
               <div id="brand">
                 <i id="apple" class="fa fa-apple" aria-hidden="true"></i>
@@ -439,7 +468,7 @@
             <h5>Company</h5>
             <ul class="footer-menu">
               <li>About Us</li>
-              <li>Carrers</li>
+              <li>Careers</li>
               <li>Media Kit</li>
             </ul>
           </div>
@@ -447,7 +476,7 @@
             <div id="page12Tb2">
               <h5>Try It Today</h5>
               <p id="tryIt">Get started for free. Add your whole team as your needs grow.</p>
-              <button type="button" id="page12Btn1">Start Today <img id="getNext" src="/images/next.png"></button>
+              <button type="button" id="page12Btn1"><a href="/html/home.html">Start Today <img id="getNext" src="/images/next.png"></a></button>
             </div>
           </div>
         </div>
@@ -462,9 +491,12 @@
           <span class="foot-menu"><a href="#">Status</a></span>
           <span class="foot-menu"><a href="#">©2021 Whitepace LLC.</a></span>
           <span class="social">
-            <i id="fb" class="fa fa-facebook" aria-hidden="true"></i>
-            <i id="twt" class="fa fa-twitter" aria-hidden="true"></i>
-            <i id="ln" class="fa fa-linkedin" aria-hidden="true"></i>
+            <a id="fb" href="#" class="fa fa-facebook"></a>
+            <a id="twt" href="#" class="fa fa-twitter"></a>
+            <a id="ggl" href="#" class="fa fa-google"></a>
+            <a id="in" href="#" class="fa fa-instagram"></a>
+            <a id="ln" href="#" class="fa fa-linkedin"></a>
+            <a id="gh" href="#" class="fa fa-github"></a> 
           </span>
         </div>
       </div> 
