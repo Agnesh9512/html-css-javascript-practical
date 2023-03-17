@@ -3,7 +3,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+<<<<<<< HEAD
   padding: 16px 220px;
+=======
+  /* padding: 16px 220px; */
+>>>>>>> main
   left: 0px;
   top: 0px;
   background: #043873;
@@ -58,8 +62,8 @@
   font-size: 17px;
 }
 .topnav a:hover {
-  background-color: #a09d9d79;
-  color: black;
+  border-radius: 8px;
+  color: rgb(116, 164, 236);
 }
 #product{
   display: none;
@@ -76,6 +80,52 @@
   letter-spacing: -0.02em;
   color: #043873;
 }
+form{
+  display: none;
+}
+.form-control{
+  box-shadow: 0 2px 5px 0px rgb(0 0 0 / 16%), 0 2px 10px 0px rgba(22, 22, 22, 0.12);
+  border: 1px solid rgb(5, 61, 124);
+}
+.modal{
+  margin-left: 37%;
+  margin-top: 100px;
+  block-size: auto;
+  transition-duration: 0.7s;
+  display: flex;
+}
+.modal-content{
+  background-color: rgb(50 188 255 / 92%);
+  position: fixed;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.modal-title{
+  font-weight: bolder;
+}
+.modal-backdrop{
+  background-color: rgb(226 238 255 / 74%);
+  z-index: 0;
+}
+.already{
+  margin-bottom: 10px;
+  font-weight: 100;
+
+}
+#submitin{
+  width: 100px;
+  float: left;
+}
+#submitup{
+  width: 100px;
+  float: left;
+}
+.close-modal{
+  width: 100px;
+  float: right;
+}
+
 #free{
   padding: 11px 21px;
   background: #4F9CF9;
@@ -110,6 +160,7 @@
 #colFirst{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 60px;
   z-index: 1;
 }
@@ -151,10 +202,13 @@
   height: 10px;
 }
 #colSecond{
+<<<<<<< HEAD
   margin-top: 45px;
+=======
+>>>>>>> main
   height: 549px;
+  display: flex;
   background: #C4DEFD;
-  z-index: 2;
 }
 .sec2{
   display: flex;
@@ -167,6 +221,7 @@
 }
 #row2{
   gap: 60px;
+  align-items: center;
 }
 #page2c1{
   display: flex;
@@ -245,7 +300,7 @@
   width: 748px;
   height: 547px;
   background: #C4DEFD;;
-  z-index: 2;
+
 }
 #row3{
   display: flex;
@@ -302,7 +357,6 @@
   line-height: 30px;
   letter-spacing: -0.02em;
   color: #212529;
-  z-index: 2;
 }
 #page2Btn2{
   padding: 11px 21px; 
@@ -483,7 +537,7 @@
   line-height: 30px;
   letter-spacing: -0.02em;
   color: #212529;
-  z-index: 2
+
 }
 #row6{
   display: flex;
@@ -558,16 +612,9 @@
   font-size: 13px;
 }
 #page5Btn1{
-  box-sizing: border-box;
-  display: flex;
   font-style: normal;
   font-family: 'Inter';
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 40px;
-  width: 166px;
-  height: 51px;
+  padding: 11px 21px;
   background: #FFFFFF;
   border: 1px solid #FFE492;
   border-radius: 8px;
@@ -641,10 +688,7 @@
   font-size: 13px;
 }
 #page5Btn2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 40px;
+  padding: 11px 21px;
   height: 51px;
   background: #4F9CF9;
   border-radius: 8px;
@@ -701,7 +745,7 @@
   width: 100%;
 }
 #page6Btn1{
-  padding: 16px 40px;
+  padding: 11px 21px;
   background-color: #4F9CF9;
   border: none;
   border-radius: 8px;
@@ -747,7 +791,7 @@
   background-color: #4F9CF9;
   border-radius: 8px;
   width: 185px;
-  padding: 16px 40px;
+  padding: 11px 21px;
   color: #FFFFFF;
 }
 #page7Tblock2{
@@ -829,11 +873,12 @@
   align-items: center;
 }
 #page9Tblock2{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 45px;
-  color: #FFFFFF;
   justify-content: center;
+  gap: 45px; */
+  color: #FFFFFF;
+  
 }
 #page9Tb1{
   display: flex;
@@ -852,11 +897,10 @@
   font-size: 18px;
 }
 #page9Btn1{
-  width: 185px;
   border: none;
   border-radius: 8px;
   background-color: #4F9CF9;
-  padding: 16px 40px;
+  padding: 11px 21px;
   color: #FFFFFF;
   font-family: 'Inter';
 }
@@ -1075,6 +1119,7 @@
   color: #FFFFFF;
   padding: 11px 21px;
   background: #4F9CF9;
+  font-family: 'Inter';
   border-radius: 8px;
   border: none;
 }
@@ -1158,6 +1203,10 @@
 #page12Btn1{
   color: #FFFFFF;
   padding: 11px 21px;
+<<<<<<< HEAD
+=======
+  font-family: 'Inter';
+>>>>>>> main
   background: #4F9CF9;
   border-radius: 8px;
   border: none;
@@ -1206,6 +1255,15 @@
 }
 #ln:hover{
   color: #0077b5 ;
+}
+#in:hover{
+  color: #fd68dd ;
+}
+#ggl:hover{
+  color: #f36d6d;
+}
+#gh:hover{
+  color: #212529;
 }
 a{
   text-decoration: none;
