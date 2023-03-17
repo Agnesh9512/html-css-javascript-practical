@@ -3,11 +3,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD
-  padding: 16px 220px;
-=======
-  /* padding: 16px 220px; */
->>>>>>> main
   left: 0px;
   top: 0px;
   background: #043873;
@@ -202,10 +197,13 @@ form{
   height: 10px;
 }
 #colSecond{
-<<<<<<< HEAD
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px; */
   margin-top: 45px;
-=======
->>>>>>> main
   height: 549px;
   display: flex;
   background: #C4DEFD;
@@ -1202,11 +1200,11 @@ form{
 }
 #page12Btn1{
   color: #FFFFFF;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 16px;
   padding: 11px 21px;
-<<<<<<< HEAD
-=======
   font-family: 'Inter';
->>>>>>> main
   background: #4F9CF9;
   border-radius: 8px;
   border: none;
