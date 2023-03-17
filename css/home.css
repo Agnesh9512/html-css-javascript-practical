@@ -1,12 +1,12 @@
-/* ::-webkit-scrollbar {
-  display: none;
-} */
 .navbar{ 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* padding: 16px 220px; */
+  padding: 16px 220px;
+  /* position: absolute; */
+  /* width: 1920px; */
+  /* height: 92px; */
   left: 0px;
   top: 0px;
   background: #043873;
@@ -68,7 +68,7 @@
   display: none;
 }
 #login{
-  padding: 11px 26px;
+  padding: 11px 21px;
   background: #FFE492;
   border-radius: 8px;
   border: none;
@@ -126,7 +126,7 @@ form{
 }
 
 #free{
-  padding: 11px 18px;
+  padding: 11px 21px;
   background: #4F9CF9;
   border-radius: 8px;
   font-family: 'Inter';
@@ -195,16 +195,18 @@ form{
   border: none;
   color:#FFFFFF;
   font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: -0.02em;
 }
 #freeNext{
   width: 10px;
   height: 10px;
 }
 #colSecond{
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px; */
+  margin-top: 45px;
   height: 549px;
   display: flex;
   background: #C4DEFD;
@@ -290,10 +292,6 @@ form{
   color: #FFFFFF;
   margin-top: 60px;
 }
-#getNext{
-  padding-left: 5px;
-  height: 15px;
-}
 #page2C2{
   display: flex;
   flex-direction: column;
@@ -314,7 +312,6 @@ form{
 }
 #page2C3{
   margin-top: 100px;
-  /* display: flex; */
   flex-direction: column;
   align-items: center;
 }
@@ -325,7 +322,6 @@ form{
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 #page2Block2{
   display: flex;
@@ -557,6 +553,7 @@ form{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: 'Inter';
   padding: 0px;
   margin-top: 60px;
 }
@@ -942,7 +939,7 @@ form{
   font-family: 'Inter';
   font-weight: 600;
 }
-.feedback .slider .card {
+.feedback .slider .card{
 	margin: 0 20px;
 }
 .feedback-selected{
@@ -982,13 +979,13 @@ form{
   font-family: 'Inter';
   font-size: 16px;
 }
-.card .card-title {
+.card .card-title{
 	font-weight: bold;
 	font-size: 24px;
   margin-top: 60px;
 }
 
-.card .card-title1 {
+.card .card-title1{
 	font-weight: bold;
 	margin: 30px 0;
 	font-size: 36px;
@@ -1097,6 +1094,7 @@ form{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Inter';
   padding: 0px;
   gap: 30px;
 }
@@ -1152,6 +1150,7 @@ form{
 }
 #row12{
   gap: 25px;
+  font-family: 'Inter';
 }
 #page12Tb1{
   display: flex;
@@ -1204,8 +1203,9 @@ form{
 }
 #page12Btn1{
   color: #FFFFFF;
-  padding: 11px 21px;
-  font-family: 'Inter';
+  /* justify-content: center;
+  align-items: center; */
+  padding: 16px;
   background: #4F9CF9;
   border-radius: 8px;
   border: none;
@@ -1288,17 +1288,11 @@ a{
   .sec5{
     padding: 140px 32px;
   }
-  .col-1{
-    width: 25.33%
-  }
   .sec6{
     padding: 140px 32px;
   }
   .sec7{
     padding: 140px 32px;
-  }
-  #page7Tbg1{
-    left: 14.5%;
   }
   .sec8{
     padding: 140px 32px;
@@ -1347,6 +1341,12 @@ a{
   }
 }
 
+@media only screen and(max-width: 600px){
+  .topnav {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1124px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -1369,11 +1369,7 @@ a{
   }
 }
 
-@media only screen and(max-width: 600px){
-  .topnav {
-    display: none;
-  }
-}
+
 
 
 
